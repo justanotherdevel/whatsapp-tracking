@@ -1,8 +1,0 @@
-var prev = null
-setInterval(function() {
-	var lastSeen = $('.pane-header .chat-body .emojitext').last().text();
-	if (lastSeen != prev){
-		console.log(Math.floor(Date.now() / 1000) + ", " + lastSeen);
-	}
-	prev = lastSeen
-}, 1000);
